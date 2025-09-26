@@ -33,7 +33,7 @@ class UserController {
     const transaction = await sequelize.transaction();
 
     try {
-      const { email, password } = req.body;
+      const { email, password, telegramId } = req.body;
 
       if (!email || !password) {
         await transaction.rollback();
@@ -55,7 +55,7 @@ class UserController {
           email,
           password: hashPassword,
           role: "USER",
-          dailyRewardAvailable: true,
+          telegramId,
         },
         { transaction }
       );

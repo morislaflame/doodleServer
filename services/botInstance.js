@@ -5,7 +5,7 @@ const { Bot, GrammyError, HttpError, InlineKeyboard } = require("grammy");
 const bot = new Bot(process.env.TELEGRAM_TOKEN);
 const keyboard = new InlineKeyboard().url(
   "Launch",
-  "https://t.me/drusik_test_bot?startapp"
+  "https://t.me/doodlekitty_bot?startapp"
 );
 
 // Здесь же настраиваем обработчики
