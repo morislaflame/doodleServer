@@ -12,8 +12,7 @@ const keyboard = new InlineKeyboard().url(
 (async () => {
   try {
     await bot.api.setMyCommands([
-      { command: "/start", description: "Start the bot" },
-      { command: "/help", description: "Get help" },
+      { command: "/start", description: "" },
     ]);
   } catch (err) {
     console.error("Failed to set bot commands:", err);
@@ -177,7 +176,7 @@ bot.on("message:successful_payment", async (ctx) => {
 
 bot.on("message", async (ctx) => {
   try {
-    await ctx.reply("Rocket launching...");
+    await ctx.reply("Запускай и играй! (Кнопка внизу)");
   } catch (err) {
     console.error("Failed to send default message:", err);
   }
