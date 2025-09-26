@@ -23,9 +23,9 @@ const keyboard = new InlineKeyboard().url(
 bot.command("start", async (ctx) => {
   try {
     await ctx.replyWithPhoto(
-      "https://i.pinimg.com/736x/78/e3/7a/78e37adce0128d71d1140cdbe8a1b8d5.jpg",
+      "https://i.pinimg.com/736x/db/5c/f8/db5cf822892449074d7b6bbfb68b1d1e.jpg",
       {
-        caption: "hello",
+        caption: "Готовь лапки и ставь рекорды в игре!",
         reply_markup: keyboard,
       }
     );
